@@ -1,3 +1,11 @@
-require('./login.js');
+//require('./login.js');
+import { login } from './login';
+require('../css/bootstrap.css');
+require('../css/app.scss');
+require('../css/app-less.less');
 document.write('THE LAST OF US!cas!dasd');
 console.log('app load');
+login('admin', 'admin');
+var logo = document.getElementById('logo');
+logo.src = require('../images/logo.png');
+$("#spantest").text('jQuery修改了此文本');
